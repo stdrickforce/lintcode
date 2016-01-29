@@ -23,8 +23,8 @@ class Solution:
     def findLadders(self, start, end, words):
         from collections import deque, defaultdict
 
-        # f = open('words.txt', 'r')
-        # words = [word.strip() for word in f.readlines()]
+        f = open('words.txt', 'r')
+        words = [word.strip() for word in f.readlines()]
 
         words = [start, end] + list(words)
         length = len(words)
